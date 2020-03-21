@@ -1,0 +1,9 @@
+.cache
+.DS_Store
+coverage
+dist
+logs
+node_modules
+*.log
+dump.rdb
+package-lock.json
