@@ -41,6 +41,8 @@ describe('LRUCache', () => {
       cache.set('key2', 'value2');
       expect(cache.get('key2')).toBe('value2');
       expect(cache._size).toBe(2);
+
+      expect(cache.get('key3')).not.toBeDefined();
     });
 
     test('lru-cache algorithm should work as expected with "max" parameter', () => {
