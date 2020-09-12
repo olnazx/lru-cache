@@ -91,6 +91,16 @@ class LRUCache {
       this._cache = new Map();
     }
   }
+
+  /**
+   * Removes all items from a cache.
+   * @returns {void}
+   */
+  clear () {
+    this._cache.clear();
+    this._oldCache.clear();
+    this._size = 0;
+  }
 }
 
 module.exports = LRUCache;

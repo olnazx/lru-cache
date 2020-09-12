@@ -113,4 +113,23 @@ describe('LRUCache', () => {
       expect(cache._size).toBe(0);
     });
   });
+
+  describe('clear()', () => {
+    test('it removes all items from a cache', () => {
+      const cache = new LRUCache();
+
+      cache.set('key1', 'value1');
+      cache.set('key2', 'value2');
+
+      expect(cache.get('key1')).toBe('value1');
+      expect(cache.get('key2')).toBe('value2');
+      expect(cache._size).toBe(2);
+
+      cache.clear();
+
+      expect(cache.get('key1')).toBe(undefined);
+      expect(cache.get('key2')).toBe(undefined);
+      expect(cache._size).toBe(0);
+    });
+  });
 });

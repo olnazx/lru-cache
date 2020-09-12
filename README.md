@@ -13,7 +13,8 @@ const LRUCache = require('lru-cache');
 const cache = new LRUCache({ ttl: 10 });
 
 cache.set('key', 'value');
-cache.get('key');
+cache.get('key'); // => 'value'
+cache.clear();
 ```
 
 ## API Reference
@@ -46,3 +47,5 @@ Key time-to-live in seconds.
 
   * `key`: String
   * `value`: Any
+
+#### `clear()`
