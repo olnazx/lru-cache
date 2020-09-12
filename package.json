@@ -9,7 +9,7 @@
   "repository": "gitlab:olnazx/lru-cache",
   "license": "Zlib",
   "devDependencies": {
-    "jest": "^25.1.0"
+    "jest": "^26.4.2"
   },
   "scripts": {
     "test": "jest --env=node"
