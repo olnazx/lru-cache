@@ -6,7 +6,7 @@
   "files": [
     "/src"
   ],
-  "repository": "gitlab:olnazx/lru-cache",
+  "repository": "github:olnazx/lru-cache",
   "license": "Zlib",
   "devDependencies": {
     "jest": "^26.4.2"

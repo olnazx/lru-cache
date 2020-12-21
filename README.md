@@ -3,13 +3,13 @@ LRU Cache.
 ## Installation
 
 ```sh
-npm i gitlab:olnazx/lru-cache
+npm i @olnazx/lru-cache@github:olnazx/lru-cache
 ```
 
 ## Example
 
 ```js
-const LRUCache = require('lru-cache');
+const LRUCache = require('@olnazx/lru-cache');
 const cache = new LRUCache({ ttl: 10 });
 
 cache.set('key', 'value');
